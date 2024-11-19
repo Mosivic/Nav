@@ -1,0 +1,106 @@
+- taxonomy: 信息资讯
+  icon: fas fa-newspaper fa-lg 
+  list:
+    - term: 新闻
+      tabs:
+        - name: 技术
+          links:
+            - title: dev.to
+              url: https://dev.to/
+              logo: dev.to.png
+              description: 国外技术新闻分享社区
+            - title: 开发者头条
+              url: https://toutiao.io/
+              logo: 开发者头条.png
+              description: 国内技术新闻资讯
+            - title: 开发者技术前线
+              url: https://www.techweb.com.cn/
+              logo: 开发者技术前线.png
+              description: 国内技术新闻资讯
+        - name: 科技
+          links:
+            - title: 少数派
+              url: https://sspai.com/
+              logo: 少数派.png
+              description: 科技新闻资讯
+            - title: 36氪
+              url: https://36kr.com/
+              logo: 36氪.png
+              description: 国内科技新闻资讯
+            - title: 虎嗅
+              url: https://www.huxiu.com/
+              logo: 虎嗅.png
+              description: 国内科技新闻资讯
+            - title: 钛媒体
+              url: https://www.tmtpost.com/
+              logo: 钛媒体.png
+              description: 国内科技新闻资讯
+        - name: 游戏
+          links:
+            - title: 游民星空
+              url: https://www.gamersky.com/
+              logo: 游民星空.png
+              description: 游戏新闻资讯
+            - title: 游研社
+              url: https://www.yystv.cn/
+              logo: 游研社.png
+              description: 游戏新闻资讯
+            - title: 游戏时光
+              url: https://www.vgtime.com/
+              logo: 游戏时光.png
+              description: 游戏新闻资讯
+            - title: 触乐
+              url: https://www.chuapp.com/
+              logo: 触乐.png
+              description: 游戏新闻资讯
+            - title: 机核
+              url: https://www.gcores.com/
+              logo: 机核.png
+              description: 游戏新闻资讯
+            - title: 游资网
+              url: https://www.youzine.com/
+              logo: 游资网.png
+              description: 游戏新闻资讯
+            - title: 游戏葡萄
+              url: https://www.youxiputao.com/
+              logo: 游戏葡萄.png
+              description: 游戏新闻资讯
+    - term: 信息
+      tabs:
+        - name: 社交平台
+          links:
+            - title: Reddit
+              url: https://www.reddit.com/
+              logo: Reddit.png
+              description: 国外社交平台
+            - title: Quora
+              url: https://www.quora.com/
+              logo: Quora.png
+              description: 国外问答社区
+            - title: 知乎
+              url: https://www.zhihu.com/
+              logo: 知乎.png
+              description: 国内社交问答平台
+            - title: 微博
+              url: https://weibo.com/
+              logo: 微博.png
+              description: 国内社交平台
+            - title: 小红书
+              url: https://www.xiaohongshu.com/
+              logo: 小红书.png
+              description: 国内社交平台
+            - title: 豆瓣
+              url: https://www.douban.com/
+              logo: 豆瓣.png
+              description: 国内社交平台
+        - name: 视频网站
+          links:
+            - title: 哔哩哔哩
+              url: https://www.bilibili.com/
+              logo: 哔哩哔哩.png
+              description: 国内视频平台
+            - title: YouTube
+              url: https://www.youtube.com/
+              logo: YouTube.png
+              description: 全球最大视频平台
+            

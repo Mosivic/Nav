@@ -114,9 +114,34 @@ footer.main-footer .footer-text a:hover {
     border-radius: 20%;
 }
 
+/*标签页*/
+.tabs-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
 
+.tab-item {
+    padding: 5px 15px;
+    margin: 0 5px;
+    color: #666;
+    border-radius: 15px;
+    cursor: pointer;
+}
 
+.tab-item.active {
+    background: #f1404b;
+    color: #fff;
+}
 
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
 
 
 

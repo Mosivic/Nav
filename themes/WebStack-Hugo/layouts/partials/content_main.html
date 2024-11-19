@@ -1,82 +1,84 @@
 <div id="content" class="content-site customize-site">
-    {{ range .Site.Data.webstack }}
-        {{ if .list }}
-            {{ range .list }}
-            <div class="tab-container">
-                <div class="d-flex flex-fill">
-                    <h4 class="text-gray text-lg mb-4">
-                        <i class="site-tag iconfont icon-tag icon-lg mr-1" id="{{ md5 .term }}"></i>
-                        {{ .term }}
-                    </h4>
-                    <div class="flex-fill"></div>
-                </div>
-                <!-- 添加 tabs -->
-                <div class="tabs-nav">
-                    {{ range $index, $tab := .tabs }}
-                    <a href="javascript:;" class="tab-item {{ if eq $index 0 }}active{{ end }}" 
-                       data-tab="{{ $index }}">{{ $tab.name }}</a>
-                    {{ end }}
-                </div>
-                <!--获取内容列表-->
-                <div class="tab-contents">
-                    {{ range $index, $tab := .tabs }}
-                    <div class="tab-content {{ if eq $index 0 }}active{{ end }}" data-tab="{{ $index }}">
-                        <div class="row">
-                            {{ range $tab.links }}
-                            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-                                <div class="url-body default">
-                                    <a href="{{ .url }}" target="_blank" data-id="" data-url="{{ .url }}" class="card no-c mb-4"
-                                        data-toggle="tooltip" data-placement="bottom" data-original-title="{{ .description }}">
-                                        <div class="card-body">
-                                            <div class="url-content d-flex align-items-center">
-                                                <div class="url-img mr-2 d-flex align-items-center justify-content-center">
-                                                    {{ if findRE "http.*?(.|\n)*?" .logo }} {{ if
-                                                    $.Site.Params.defaultLogo }}
-                                                    <img class="lazy" src="{{ .logo }}" data-src="{{ .logo }}"
-                                                        onerror="javascript:this.src='{{ $.Site.Params.defaultLogo }}'"
-                                                        alt="{{ .title }}" />
-                                                    {{ else }}
-                                                    <img class="lazy" src="{{ .logo }}" data-src="{{ .logo }}"
-                                                        onerror="javascript:this.src='{{ .logo }}'" alt="{{ .title }}" />
-                                                    {{ end }} {{ else }} {{ if $.Site.Params.defaultLogo }}
-                                                    <img class="lazy" src="{{ $.Site.Params.logosPath }}/{{ .logo }}"
-                                                        data-src="{{ $.Site.Params.logosPath }}/{{ .logo }}"
-                                                        onerror="javascript:this.src='{{ $.Site.Params.defaultLogo }}'"
-                                                        alt="{{ .title }}" />
-                                                    {{ else }}
-                                                    <img class="lazy" src="{{ $.Site.Params.logosPath }}/{{ .logo }}"
-                                                        data-src="{{ $.Site.Params.logosPath }}/{{ .logo }}"
-                                                        onerror="javascript:this.src='{{ $.Site.Params.logosPath }}/{{ .logo }}'"
-                                                        alt="{{ .title }}" />
-                                                    {{ end }} {{ end }}
-                                                </div>
-                                                <div class="url-info flex-fill">
-                                                    <div class="text-sm overflowClip_1">
-                                                        <strong>{{ .title }}</strong>
-                                                    </div>
-                                                    <p class="overflowClip_1 m-0 text-muted text-xs">
-                                                        {{ .description }}
-                                                    </p>
-                                                </div>
-                                            </div>
+    {{ range .Site.Data.Web }}
+    {{ range .}}
+    {{ if .list }}
+    {{ range .list }}
+    <div class="tab-container">
+        <div class="d-flex flex-fill">
+            <h4 class="text-gray text-lg mb-4">
+                <i class="site-tag iconfont icon-tag icon-lg mr-1" id="{{ md5 .term }}"></i>
+                {{ .term }}
+            </h4>
+            <div class="flex-fill"></div>
+        </div>
+        <!-- 添加 tabs -->
+        <div class="tabs-nav">
+            {{ range $index, $tab := .tabs }}
+            <a href="javascript:;" class="tab-item {{ if eq $index 0 }}active{{ end }}" data-tab="{{ $index }}">{{
+                $tab.name }}</a>
+            {{ end }}
+        </div>
+        <!--获取内容列表-->
+        <div class="tab-contents">
+            {{ range $index, $tab := .tabs }}
+            <div class="tab-content {{ if eq $index 0 }}active{{ end }}" data-tab="{{ $index }}">
+                <div class="row">
+                    {{ range $tab.links }}
+                    <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+                        <div class="url-body default">
+                            <a href="{{ .url }}" target="_blank" data-id="" data-url="{{ .url }}" class="card no-c mb-4"
+                                data-toggle="tooltip" data-placement="bottom" data-original-title="{{ .description }}">
+                                <div class="card-body">
+                                    <div class="url-content d-flex align-items-center">
+                                        <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                            {{ if findRE "http.*?(.|\n)*?" .logo }} {{ if
+                                            $.Site.Params.defaultLogo }}
+                                            <img class="lazy" src="{{ .logo }}" data-src="{{ .logo }}"
+                                                onerror="javascript:this.src='{{ $.Site.Params.defaultLogo }}'"
+                                                alt="{{ .title }}" />
+                                            {{ else }}
+                                            <img class="lazy" src="{{ .logo }}" data-src="{{ .logo }}"
+                                                onerror="javascript:this.src='{{ .logo }}'" alt="{{ .title }}" />
+                                            {{ end }} {{ else }} {{ if $.Site.Params.defaultLogo }}
+                                            <img class="lazy" src="{{ $.Site.Params.logosPath }}/{{ .logo }}"
+                                                data-src="{{ $.Site.Params.logosPath }}/{{ .logo }}"
+                                                onerror="javascript:this.src='{{ $.Site.Params.defaultLogo }}'"
+                                                alt="{{ .title }}" />
+                                            {{ else }}
+                                            <img class="lazy" src="{{ $.Site.Params.logosPath }}/{{ .logo }}"
+                                                data-src="{{ $.Site.Params.logosPath }}/{{ .logo }}"
+                                                onerror="javascript:this.src='{{ $.Site.Params.logosPath }}/{{ .logo }}'"
+                                                alt="{{ .title }}" />
+                                            {{ end }} {{ end }}
                                         </div>
-                                    </a>
-                                    <a href="{{ .url }}" class="togo text-center text-muted is-views" data-id="689"
-                                        data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
-                                        <i class="iconfont icon-goto"></i>
-                                    </a>
+                                        <div class="url-info flex-fill">
+                                            <div class="text-sm overflowClip_1">
+                                                <strong>{{ .title }}</strong>
+                                            </div>
+                                            <p class="overflowClip_1 m-0 text-muted text-xs">
+                                                {{ .description }}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            {{ end }}
+                            </a>
+                            <a href="{{ .url }}" class="togo text-center text-muted is-views" data-id="689"
+                                data-toggle="tooltip" data-placement="right" title="直达" rel="nofollow">
+                                <i class="iconfont icon-goto"></i>
+                            </a>
                         </div>
                     </div>
                     {{ end }}
                 </div>
             </div>
             {{ end }}
-        {{ end }}
+        </div>
+    </div>
     {{ end }}
-    
+    {{ end }}
+    {{ end }}
+    {{ end }}
+
     <!-- 友情链接部分 -->
     <h4 class="text-gray text-lg mb-4">
         <i class="iconfont icon-book-mark-line icon-lg mr-2" id="friendlink"></i>友情链接

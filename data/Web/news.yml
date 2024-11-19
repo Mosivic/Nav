@@ -109,6 +109,13 @@
               description: 全球最大视频平台
         - name: 论坛
           links:
+            - title: Keylol
+              url: https://keylol.com/
+              logo: Keylol.png
+              description: 游戏论坛
+            - title: NGA
+              url: https://ngabbs.com/
+              description: NGA玩家社区
             - title: 天涯
               url: https://www.tianya.im/
               logo: 天涯.png
@@ -117,9 +124,10 @@
               url: https://tianya.at/
               logo: 天涯.png
               description: 天涯论坛备份
-            - title: Keylol
-              url: https://keylol.com/
-              logo: Keylol.png
-              description: 游戏论坛
-
+        - name: 有趣的网站
+          links:
+            - title: 煎蛋
+              url: https://jandan.net/
+              logo: 煎蛋.png
+              description: 有趣的网站
             

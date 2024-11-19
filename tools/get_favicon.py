@@ -29,10 +29,25 @@ class FaviconDownloader:
         with open(self.mapping_file, 'w', encoding='utf-8') as f:
             json.dump(self.domain_mapping, f, ensure_ascii=False, indent=2)
 
-    def download_favicon(self, url, title):
+    def check_local_logo(self, logo):
+        """检查本地是否存在logo文件"""
+        if logo:
+            logo_path = os.path.join(self.save_dir, logo)
+            if os.path.exists(logo_path):
+                return True
+        return False
+
+    def download_favicon(self, url, title, logo=None):
         """下载网站图标并保存"""
         try:
             domain = urlparse(url).netloc
+            
+            # 检查本地是否已存在配置的logo文件
+            if self.check_local_logo(logo):
+                print(f"跳过已存在的本地logo: {logo}")
+                # 更新映射表
+                self.domain_mapping[domain] = logo
+                return
             
             # 检查域名是否已经下载过图标
             if domain in self.domain_mapping:
@@ -45,9 +60,8 @@ class FaviconDownloader:
             # 发送请求获取图标
             response = requests.get(favicon_url)
             if response.status_code == 200:
-                # 确保文件名合法
-                safe_title = "".join(c for c in title if c.isalnum() or c in (' ', '-', '_')).rstrip()
-                filename = f"{safe_title}.png"
+                # 使用配置的logo名称或生成新的文件名
+                filename = logo if logo else f"{title}.png"
                 filepath = os.path.join(self.save_dir, filename)
                 
                 # 保存图标
@@ -77,7 +91,8 @@ class FaviconDownloader:
                     for link in tab['links']:
                         url = link['url']
                         title = link['title']
-                        self.download_favicon(url, title)
+                        logo = link.get('logo')  # 获取logo配置，如果没有则为None
+                        self.download_favicon(url, title, logo)
 
     def run(self):
         """运行下载器"""

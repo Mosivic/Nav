@@ -1,0 +1,73 @@
+- taxonomy: 生活
+  icon: fas fa-live fa-lg 
+  list:
+    - term: 健康
+      tabs:
+        - name: 生活习惯
+          links:
+            - title: 人类系统优化
+              url: https://github.com/zijie0/HumanSystemOptimization
+              logo: Github.png
+              description: 健康学习到150岁 - 人体系统调优不完全指南
+            - title: 如何活的更久
+              url: https://github.com/geekan/HowToLiveLonger
+              logo: Github.png
+              description: 一份程序员延寿指南，目标是稳健地活得更久
+    - term: 下厨房
+      tabs:
+        - name: 烹饪技法
+          links:
+            - title: How to cook
+              url: https://github.com/Anduin2017/HowToCook
+              logo: Github.png
+              description: 程序员在家做饭方法指南
+    - term: 房屋
+      tabs:
+        - name: 租住
+          links:
+            - title: 杭州租房指南
+              url: https://github.com/zkqiang/hangzhou-house-guide
+              logo: Github.png
+              description: 一位在杭州工作的程序员写的2022年杭州购房指南，根据个人多年购房选房经历，总结而成的一篇买房攻略，涉及新房摇号和二手房选购，包含大量杭州城市规划资料
+    - term: 法律
+      tabs:
+        - name: 法律信息
+          links:
+            - title: 法律时代导航
+              url: https://yesen.cn/
+              logo: 法律时代导航.png
+              description: 法律知识
+            - title: 法律文库
+              url: https://www.justlaws.cn/constitution/%E5%BA%8F%E8%A8%80.html
+              logo: 法律文库.png
+              description: 以文档的风格展示每一部法律，结构清晰、界面整洁，带来优雅、纯净、极致的阅读体验。
+        - name: 法律咨询
+          links:
+            - title: AI 12348
+              url: https://ai.12348.gov.cn/pc/
+              logo: AI 12348.png
+              description: 免费在线出具法律意见书，遇到租房、劳务、房屋买卖等纠纷，不懂的都可以先用用这个，很多法律问题都能得到有效解答。
+    - term: 交通
+      tabs:
+        - name: 火车
+          links:
+            - title: py12306
+              url: https://github.com/pjialin/py12306
+              logo: Github.png
+              description: 🚂 12306 购票助手，支持集群，多账号，多任务购票以及 Web 页面管理
+            - title: 12306spy
+              url: https://github.com/e1roy/12306spy
+              logo: Github.png
+              description: 12306查票, 找到一张能上车的票
+    - term: 创业
+      tabs:
+        - name: 创业信息
+          links:
+            - title: 一人企业方法论
+              url: https://github.com/princehuang/one-person-business-methodology
+              logo: Github.png
+              description: 《一人企业方法论》第二版，也适合做其他副业（比如自媒体、电商、数字商品）的非技术人群
+            - title: overseas-website-note
+              url: https://github.com/princehuang/overseas-website-note
+              logo: Github.png
+              description: 本项目记录作者开发海外网站和设立跨境业务过程中的实践经验。

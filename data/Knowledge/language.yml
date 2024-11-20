@@ -1,0 +1,25 @@
+- taxonomy: 语言
+  icon: fas fa-language fa-lg 
+  list:
+    - term: 英语
+      tabs:
+        - name: 学习指南
+          links:
+            - title: 英语提升指南
+              url: https://vvyst0z7tes.feishu.cn/wiki/HQuawZepyiwNiNkImw6c00IXnmc
+              logo: 飞书.png
+              description: 基于南加州大学的荣休教授斯蒂芬.克拉申（Stephen D。Krashen）博士的假说理论，为不同水平的英语自学者提供了结构化的学习路径。
+        - name: 语法
+          links:
+            - title: English Writing
+              url: https://github.com/yzy1996/English-Writing
+              logo: Github.png
+              description: 收录作者在阅读论文的过程中收集整理的一些好的英语用法。
+    - term: 法语
+      tabs:
+        - name: 语法
+          links: 
+            - title: 语法俱乐部
+              url: https://github.com/llwslc/grammar-club
+              logo: Github.com
+              description: 旋元佑老师的语法俱乐部书籍电子版          

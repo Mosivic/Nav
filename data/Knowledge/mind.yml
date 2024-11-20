@@ -1,0 +1,31 @@
+- taxonomy: 思维
+  icon: fas fa-brain fa-lg 
+  list:
+    - term: 阅读
+      tabs:
+        - name: 笔记
+          links:
+            - title: 打造超人笔记
+              url: https://github.com/xdite/note-hack
+              logo: Github.png
+              description: 一本关于如何有效记录和整理笔记的书籍。
+        - name: 写作
+          links:
+            - title: 让你受益匪浅的名家写作经验
+              url: https://docs.qq.com/aio/DWVRkZ1RUWHRsdU1J?p=4oWLX7hAfFdfdbi4Ir5wqo
+              logo: QQ.png
+              description: 各文学大家的写作经验汇总
+        - name: 思维
+          links:
+            - title: 绝妙的个人生产力
+              url: https://github.com/eastlakeside/awesome-productivity-cn
+              logo: Github.png
+              description: 一份开放的由中文社区共建的绝妙系列精选资源清单，专注于提升个人生产力的知识方法和工具。此项目从书籍、网站、工具、笔记、任务管理等角度推荐怎么提升个人生产力
+            - title: 认知偏差知识手册
+              url: https://imzl.com/cognitive-bias/
+              logo: 认知偏差知识手册.png
+              description: 字节·飞书设计团队出的《认知偏差知识手册》，总结了 67 种行为偏差和示例解析
+            - title: 技术面试最后反问面试官的话
+              url: https://github.com/yifeikong/reverse-interview-zh
+              logo: GitHub.png
+              description: 技术面试最后反问面试官的话

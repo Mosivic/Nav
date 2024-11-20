@@ -1,0 +1,43 @@
+- taxonomy: 阅读
+  icon: fas fa-book fa-lg 
+  list:
+    - term: 书籍阅读
+      tabs:
+        - name: 阅读平台
+          links:
+            - title: 微信读书
+              url: https://weread.qq.com/
+              logo: 微信读书.png
+              description: 微信读书
+            - title: 起点中文网
+              url: https://www.qidian.com/
+              logo: 起点中文网.png
+              description: 起点中文网
+            - title: 网易蜗牛读书
+              url: https://www.wodedushu.com/
+              logo: 网易蜗牛读书.png
+              description: 网易蜗牛读书
+            - title: 多看阅读
+              url: https://www.duokan.com/
+              logo: 多看阅读.png
+              description: 多看阅读
+            - title: 豆瓣阅读
+              url: https://read.douban.com/
+              logo: 豆瓣阅读.png
+              description: 豆瓣阅读
+            - title: 开讀计劃(香港)
+              url: https://openbookshongkong.com/book/
+              logo: 开讀计劃(香港).png
+              description: 开讀计劃由香港中文大学、香港城市大学和香港大学的图书馆与出版社共同发起，是香港首个开放取用图书计划。该计划于 2024 年 7 月 17 日推出了由三家大学出版社出版的九本中文图书，这些图书免费开放给公众，涵盖历史、哲学、宗教、法学、人类学、性别研究等领域。
+        - name: Newsletter
+          links:
+            - title: Newsletter List
+              url: https://github.com/chasays/newsletter-list
+              logo: Github.png
+              description: 免费的`newsletter`收集项目
+        - name: 读书笔记
+          links:
+            - title: Geek Docs 读书笔记
+              url: https://reading.geek-docs.com/
+              logo: Geek Docs 读书笔记.png
+              description: 网站提供了各类型书籍的详细读书笔记，每篇笔记带有详细的思维导图

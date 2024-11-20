@@ -111,7 +111,7 @@ class FaviconDownloader:
 
 def main():
     # 配置路径
-    yaml_dir = "data/Web"  # YAML文件所在目录
+    yaml_dir = "data/Knowledge"  # YAML文件所在目录
     save_dir = "themes/WebStack-Hugo/static/assets/images/logos"  # 图标保存目录
     
     # 创建下载器实例并运行

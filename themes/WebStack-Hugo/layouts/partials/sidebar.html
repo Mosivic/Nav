@@ -90,7 +90,8 @@
                 <div class="sidebar-menu flex-fill">
                     <div class="sidebar-scroll">
                         <div class="sidebar-menu-inner">
-                            <ul>
+                            <!-- 主页菜单 -->
+                            <ul id="sidebar-menu-web" class="sidebar-menu-list">
                                 {{ range .Site.Data.Web }}
                                 {{range .}}
                                     {{ if .list }}
@@ -106,17 +107,32 @@
                                             {{ end }}
                                         </ul>
                                     </li> 
-                                    {{ else }}
-                                    <li class="sidebar-item">
-                                        <a href="#{{ md5 .taxonomy }}" class="smooth">
-                                            <i class="{{ .icon }} fa-lg icon-fw icon-lg mr-2"></i>
-                                            <span>{{ .taxonomy }}</span>
-                                        </a>
-                                    </li>
                                     {{ end }}
                                 {{ end }}
-                                {{end}}
-                            </ul>           
+                                {{ end }}
+                            </ul>
+
+                            <!-- 知识库菜单 -->
+                            <ul id="sidebar-menu-knowledge" class="sidebar-menu-list" style="display: none;">
+                                {{ range .Site.Data.Knowledge }}
+                                {{range .}}
+                                    {{ if .list }}
+                                    <li class="sidebar-item">
+                                        <a href="#{{ range first 1 .list }}{{ md5 .term }}{{ end }}" class="smooth change-href" data-change="#{{ range first 1 .list }}{{ md5 .term }}{{ end }}">    
+                                            <i class="{{ .icon }} icon-fw icon-lg mr-2"></i>
+                                            <span>{{ .taxonomy }}</span>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                        </a>
+                                        <ul>
+                                            {{ range .list }}
+                                            <li><a href="#{{ md5 .term }}" class="smooth"><span>{{ .term }}</span></a></li>
+                                            {{ end }}
+                                        </ul>
+                                    </li> 
+                                    {{ end }}
+                                {{ end }}
+                                {{ end }}
+                            </ul>
                         </div>
                     </div>
                 </div>

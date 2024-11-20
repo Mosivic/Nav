@@ -92,23 +92,33 @@
                         <ul class="navbar-nav site-menu" style="margin-right: 16px;">
                         
 			<li >
-				<a href="./">
-                                    <i class="fa fa-home fa-lg mr-2"></i>
-                                    <span>首页</span>
-                                </a>
-				<ul class="sub-menu">
 				
-				</ul>
+					<a href="./">
+				
+					<i class="fa fa-home fa-lg mr-2"></i>
+					<span>首页</span>
+				</a>
+				
 			    </li>
 			
 			<li >
-				<a href="https://furo.fun/">
-                                    <i class="fa fa-book fa-lg mr-2"></i>
-                                    <span>博客</span>
-                                </a>
-				<ul class="sub-menu">
 				
-				</ul>
+					<a href="https://furo.fun/">
+				
+					<i class="fa fa-book fa-lg mr-2"></i>
+					<span>博客</span>
+				</a>
+				
+			    </li>
+			
+			<li >
+				
+					<a href="javascript:;" class="custom-nav" data-source="knowledge">
+				
+					<i class="fa fa-database fa-lg mr-2"></i>
+					<span>知识</span>
+				</a>
+				
 			    </li>
 			
 			</ul>
@@ -266,7 +276,7 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
         siteWelcome.addClass('close');
         setTimeout(function() {
             siteWelcome.remove();
-        }, 600);
+        }, 1000);
     });
 </script>
 <script>        
@@ -362,6 +372,31 @@ function switchNightMode(){
         $(".mode-ico").addClass("icon-night");
     }
 }
+</script>
+
+<script>
+$(document).ready(function(){
+    
+    $('.custom-nav').click(function(){
+        var source = $(this).data('source');
+        if(source === 'knowledge') {
+            $('#content-main').hide();
+            $('#content-knowledge').show();
+            $('#sidebar-menu-web').hide();
+            $('#sidebar-menu-knowledge').show();
+        }
+    });
+    
+    
+    $('a[href="./"]').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        $('#content-knowledge').hide();
+        $('#content-main').show();
+        $('#sidebar-menu-knowledge').hide();
+        $('#sidebar-menu-web').show();
+    });
+});
 </script>
 </body>
 </html>

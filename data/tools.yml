@@ -6,33 +6,42 @@
         - name: 编程工具
           links:
             - title: video2blog
+              logo: github.png
               url: https://github.com/aehyok/video2blog
               description: 视频转图文AI跨平台客户端
             - title: instantbox
+              logo: github.png
               url: https://github.com/instantbox/instantbox
               description: 浏览器中快速启动临时Linux系统
             - title: cat-catch
+              logo: github.png
               url: https://github.com/xifangczy/cat-catch
               description: 资源嗅探浏览器扩展
         - name: 系统工具
           links:
             - title: FixTim
+              logo: github.png
               url: https://github.com/Lakr233/FixTim
               description: Mac系统运行时错误修复工具
             - title: Pearcleaner
+              logo: github.png
               url: https://github.com/alienator88/Pearcleaner
               description: Mac应用卸载清理工具
             - title: dll-files
+              logo: github.png
               url: https://cn.dll-files.com/
               description: Windows系统DLL文件下载
         - name: 版本控制
           links:
             - title: gitbutler
+              logo: github.png
               url: https://github.com/gitbutlerapp/gitbutler
               description: Git分支管理工具
             - title: learngitbranching
+              logo: github.png
               url: https://learngitbranching.js.org/
               description: 交互式Git学习工具
             - title: git-tips
+              logo: github.png
               url: https://github.com/521xueweihan/git-tips
               description: Git的奇技淫巧

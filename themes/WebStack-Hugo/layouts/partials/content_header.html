@@ -27,15 +27,21 @@
                         <ul class="navbar-nav site-menu" style="margin-right: 16px;">
                         {{ range .Site.Data.headers }}
 			<li {{ if .list }}class="menu-item-has-children"{{ end }}>
-				<a href="{{ .link }}">
-                                    <i class="{{ .icon }} fa-lg mr-2"></i>
-                                    <span>{{ .item }}</span>
-                                </a>
+				{{ if .dataSource }}
+					<a href="javascript:;" class="custom-nav" data-source="{{ .dataSource }}">
+				{{ else }}
+					<a href="{{ .link }}">
+				{{ end }}
+					<i class="{{ .icon }} fa-lg mr-2"></i>
+					<span>{{ .item }}</span>
+				</a>
+				{{ if .list }}
 				<ul class="sub-menu">
 				{{ range .list }}
 				    <li><a href="{{ .url }}">{{ .name }}</a></li>
 				{{ end }}
 				</ul>
+				{{ end }}
 			    </li>
 			{{ end }}
 			</ul>

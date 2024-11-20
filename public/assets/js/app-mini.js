@@ -1,5 +1,10 @@
 (function($){ 
     $(document).ready(function(){
+        // 恢复sidebar状态
+        var savedState = localStorage.getItem('sidebarState');
+        if(savedState === 'mini') {
+            $('#sidebar').addClass('mini-sidebar');
+        }
         // 侧栏菜单初始状态设置
         if(theme.minNav != '1')trigger_resizable(true);
         // 主题状态
@@ -56,7 +61,15 @@
         });
     });
     $(document).on('click', "a[target!='_blank']", function() {
-        if( theme.loading=='1' && $(this).attr('href') && $(this).attr('href').indexOf("#") != 0 && $(this).attr('href').indexOf("java") != 0 && !$(this).data('fancybox')  && !$(this).data('commentid') && !$(this).hasClass('nofx') ){
+        if( theme.loading=='1' && 
+            $(this).attr('href') && 
+            $(this).attr('href').indexOf("#") != 0 && 
+            $(this).attr('href').indexOf("java") != 0 && 
+            $(this).attr('href') != './' && 
+            !$(this).data('fancybox') && 
+            !$(this).data('commentid') && 
+            !$(this).hasClass('nofx')
+        ){
             var load = $('<div id="load-loading"></div>');
             $("body").prepend(load);
             load.animate({opacity:'1'},200,'swing').delay(2000).hide(300,function(){ load.remove() });
@@ -309,10 +322,10 @@
  
 
     $('#sidebar-switch').on('click',function(){
+        var isMini = $('#sidebar').hasClass('mini-sidebar');
         $('#sidebar').removeClass('mini-sidebar');
-	//221024: 调整左导航展开时,点击图标锚定定位失效
-        //$('.sidebar-nav .change-href').attr('href','javascript:;');
-
+        // 保存状态到localStorage
+        localStorage.setItem('sidebarState', isMini ? 'expanded' : 'mini');
     }); 
  
     // Trigger Resizable Function

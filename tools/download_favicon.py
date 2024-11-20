@@ -55,7 +55,7 @@ class FaviconDownloader:
                 return
             
             # 构造favicon.im的URL
-            favicon_url = f"https://favicon.im/{domain}"
+            favicon_url = f"https://favicon.im/{domain}?larger=true"
             
             # 发送请求获取图标
             response = requests.get(favicon_url)

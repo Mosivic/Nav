@@ -33,7 +33,7 @@
           links:
             - title: Newsletter List
               url: https://github.com/chasays/newsletter-list
-              logo: Github.png
+              logo: github.png
               description: 免费的`newsletter`收集项目
         - name: 读书笔记
           links:

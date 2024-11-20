@@ -1,0 +1,195 @@
+- taxonomy: 计算机
+  icon: fas fa-code fa-lg 
+  list:
+    # - term: Web
+    #   tabs:
+    #     - name: 综合
+    #       links:
+    #         - title: 少数派
+    #           url: https://sspai.com/
+    #           logo: 少数派.png
+    #           description: 科技新闻资讯
+    #     - name: 前端
+    #       links:
+    #         - title: 少数派
+    #           url: https://sspai.com/
+    #           logo: 少数派.png
+    #           description: 科技新闻资讯
+    #     - name: 后端
+    #       links:
+    #         - title: 少数派
+    #           url: https://sspai.com/
+    #           logo: 少数派.png
+    #           description: 科技新闻资讯
+
+    - term: 编程语言
+      tabs:
+        - name: C/C++
+          links:
+            - title: Cpp 0-1
+              url: https://github.com/AnkerLeng/Cpp-0-1-Resource
+              logo: Github.png
+              description: C++ 从零到一
+            - title: 阮一峰 C语言教程
+              url: https://github.com/wangdoc/clang-tutorial
+              logo: Github.png
+              description: 阮一峰 C语言教程
+        - name: Go
+          links:
+            - title: Golang 资料补给包
+              url: https://github.com/0voice/Introduction-to-Golang
+              logo: Github.png
+              description: 包含文章，书籍，作者论文，理论分析，开源框架，云原生，大佬视频，大厂实战分享ppt。
+            - title: Go 101
+              url: https://gfw.go101.org/article/101.html
+              logo: Go101.png
+              description: 一本着墨于Go语法语义以及运行时相关知识点的编程指导书
+        - name: Rust
+          links:
+            - title: Rust 语言圣经
+              url: https://github.com/rust-lang/book
+              logo: Github.png
+              description: Rust 语言圣经
+            - title: Easy Rust
+              url: https://github.com/Dhghomon/easy_rust
+              logo: Github.png
+              description: 适合初学者的 Rust 教程
+            - title: Rust 101
+              url: https://github.com/tweedegolf/101-rs
+              logo: Github.png
+              description: Rust 101
+            - title: Rust By Practice
+              url: https://github.com/sunface/rust-by-practice
+              logo: Github.png
+              description: Rust By Practice
+            - title: Writing an OS in Rust
+              url: https://github.com/phil-opp/blog_os
+              logo: Github.png
+              description: 用 Rust 编程语言编写一个小操作系统
+            - title: Rust 嵌入式开发 
+              url: https://logiase.github.io/The-Embedded-Rust-Book-CN/intro/index.html
+              logo: Github.png
+              description: 让开发者快速上手Rust嵌入式开发
+
+        - name: JavaScript
+          links:
+            - title: JavaScript30
+              url: https://github.com/wesbos/JavaScript30
+              logo: Github.png
+              description: JavaScript 30天挑战
+            - title: 1loc
+              url: https://1loc.dev/
+              logo: 1loc.png
+              description: 一行 js 代码可以实现的基础功能
+            - title: JavaScript 权威指南中英对照
+              url: https://github.com/ten-ltw/JavaScript-The-Definitive-Guide-7th-zh
+              logo: Github.png
+              description: 《JavaScript 权威指南第七版》中英对照，在线阅读：https://js.okten.c
+        - name: Python
+          links:
+
+    - term: 算法
+      tabs:
+        - name: 算法
+          links:
+            - title: 左神算法笔记
+              url: https://github.com/Dairongpeng/algorithm-note
+              logo: Github.png
+              description: 左神算法笔记，基于 Java 实现
+            - title: 算法学习指南
+              url: https://github.com/labuladong/fucking-algorithm
+              logo: Github.png
+              description: 算法学习指南
+            - title: leetcode 解题之路
+              url: https://github.com/azl397985856/leetcode
+              logo: Github.png
+              description: 带你玩转LeetCode
+    - term: 数据科学
+      tabs:
+        - name: 数据分析
+          links:
+            - title: 命令行数据科学
+              url: https://jeroenjanssens.com/dsatcl/
+              logo: 命令行数据科学.png
+              description: 命令行数据科学
+            - title: 数据科学学习指南
+              url: https://github.com/amitness/learning
+              logo: Github.png
+              description: 数据科学学习指南，帮你每天提升1%的数据科学技能。主要包含电子表格与数据库的数据处理、命令行工具使用、数据分析与可视化技巧、论文阅读方法，各类模型与算法讲解等知识，另外还有商业思维培养、写作与沟通技巧等非技术类内容。
+    # - term: 人工智能
+    #   tabs:
+    #     - name: 机器学习
+    #       links:
+    #         - title: 少数派
+    #           url: https://sspai.com/
+    #           logo: 少数派.png
+    #           description: 科技新闻资讯
+    - term: 开发工具
+      tabs:
+        - name: 文本编辑
+          links:
+            - title: VimIs
+              url: https://vim.is/#exercise
+              logo: VimIs.png
+              description: Vim 学习网站
+        - name: 终端工具
+        - name: 命令行
+          links:
+            - title: 命令行的艺术
+              url: https://github.com/jlevy/the-art-of-command-line
+              logo: Github.png
+              description: 命令行的艺术
+            - title: 命令行速查表
+              url: https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh
+              logo: Github.png
+              description: 命令行速查表
+        - name: 虚拟容器
+          links:
+            - title: Docker从入门到实践
+              url: https://github.com/yeasy/docker_practice
+              logo: Github.png
+              description: Docker 实践指南
+            - title: DockerPractice
+              url: https://vuepress.mirror.docker-practice.com/
+              logo: DockerPractice.png
+              description: 一份面向 Docker 初学者的教程
+    - term: 游戏程式
+      tabs:
+        - name: 综合
+          links:
+            - title: Game Programmer Study Notes
+              url: https://github.com/QianMo/Game-Programmer-Study-Notes
+              logo: Github.png
+              description: 浅墨(https://github.com/QianMo)的游戏程序员生涯的读书笔记合辑
+        - name: 游戏引擎
+          links:
+            - title: 游戏引擎架构
+              url: https://github.com/ellisonleao/game-engine-architecture
+              logo: Github.png
+              description: 游戏引擎架构
+        - name: 编程模式
+          links:
+            - title: 3D 编程模式
+              url: https://github.com/yyc-git/3DProgramPattern
+              logo: Github.png
+              description: 罗列了从实战项目中提炼出来的关于3D编程（主要包括“3D引擎/游戏引擎”、“编辑器”开发）的各种编程模式
+    - term: 操作系统
+      tabs:
+        - name: Linux
+          links:
+            - title: Linux 内核教学
+              url: https://linux-kernel-labs-zh.xyz/
+              logo: Linux 内核教学.png
+              description: Linux 内核教学
+            - title: Linux 命令大全
+              url: https://github.com/jaywcjlove/linux-command
+              logo: Github.png
+              description: Linux 命令大全
+            - title: Linux 命令行与shell脚本编程大全
+              url: https://github.com/fengyun-linux/linux-command-line-and-shell-scripting-book
+              logo: Github.png
+              description: Linux 命令行与shell脚本编程大全
+            - title: Linux 内核精通笔记
+              url: https://github.com/0voice/linux_kernel_wiki
+              logo: Github.png
+              description: Linux 内核精通笔记

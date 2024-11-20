@@ -1,10 +1,5 @@
 (function($){ 
     $(document).ready(function(){
-        // 恢复sidebar状态
-        var savedState = localStorage.getItem('sidebarState');
-        if(savedState === 'mini') {
-            $('#sidebar').addClass('mini-sidebar');
-        }
         // 侧栏菜单初始状态设置
         if(theme.minNav != '1')trigger_resizable(true);
         // 主题状态
@@ -319,15 +314,6 @@
             }
         }
     }
- 
-
-    $('#sidebar-switch').on('click',function(){
-        var isMini = $('#sidebar').hasClass('mini-sidebar');
-        $('#sidebar').removeClass('mini-sidebar');
-        // 保存状态到localStorage
-        localStorage.setItem('sidebarState', isMini ? 'expanded' : 'mini');
-    }); 
- 
     // Trigger Resizable Function
     var isMin = false,
         isMobileMin = false;

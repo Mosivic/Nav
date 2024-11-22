@@ -1,5 +1,6 @@
         <footer class="main-footer footer-type-1 text-xs">
             <div id="footer-tools" class="d-flex flex-column">
+                <!-- 右上角返回顶部 -->
                 <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top">
                     <i class="iconfont icon-to-up"></i>
                 </a>
@@ -23,6 +24,11 @@
                     <i class="mode-ico iconfont icon-night"></i>
                 </a>
                 {{ end }}
+                <!-- 右下角随机跳转 -->
+                <a href="javascript:" onclick="window.location.href='javascript:randomJump()'" class="btn rounded-circle random-jump m-1" id="random-jump"
+                    data-toggle="tooltip" data-placement="left" title="随机访问">
+                    <i class="fa fa-random"></i>
+                </a>
             </div>
             <div class="footer-inner">
                 <div class="footer-text">{{ replace $.Site.Params.footer.copyright "{year}" now.Year | markdownify }}</div>

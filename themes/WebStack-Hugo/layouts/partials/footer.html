@@ -12,6 +12,26 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 <script type='text/javascript' src='{{ absURL "assets/js/lazyload.min-12.4.0.js" }}' id='lazyload-js'></script>
 <script type='text/javascript' src='{{ absURL "assets/js/tabs.js" }}' id='tabs-js'></script>
 
+
+
+<!-- 添加随机跳转的JavaScript函数 -->
+<script>
+function randomJump() {
+    // 获取所有有效的外部链接
+    var links = Array.from(document.querySelectorAll('a[href]')).filter(link => 
+        link.href.startsWith('http') && !link.href.includes(window.location.hostname)
+    );
+    
+    if (links && links.length > 0) {
+        var randomIndex = Math.floor(Math.random() * links.length);
+        var randomLink = links[randomIndex];
+        if (randomLink && randomLink.href) {
+            window.open(randomLink.href, '_blank');
+        }
+    }
+}
+</script>
+
 <!-- {{ if $.Site.Params.expandSidebar }}
 <script type='text/javascript' src='{{ absURL "assets/js/app-anim.js" }}' id='appanim-js'></script>
 {{ else }} -->
@@ -123,9 +143,6 @@ function switchNightMode(){
 
 <script>
 $(document).ready(function(){
-    // 判断当前加载的是哪个js文件
-    var isAnimJs = $('#appanim-js').length > 0;
-    
     $('.custom-nav').click(function(){
         var source = $(this).data('source');
         if(source === 'knowledge') {

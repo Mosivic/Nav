@@ -149,12 +149,12 @@
                         
                         <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block">
                             <script>
-                                fetch('https://v1.hitokoto.cn')
+                                fetch('https://v1.hitokoto.cn/?c=a&b&c=c')
                                     .then(response => response.json())
                                     .then(data => {
-                                    const hitokoto = document.getElementById('hitokoto_text')
-                                    hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-                                    hitokoto.innerText = data.hitokoto
+                                        const hitokoto = document.getElementById('hitokoto_text')
+                                        hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+                                        hitokoto.innerText = data.hitokoto + ' —— ' + data.from
                                     })
                                     .catch(console.error)
                             </script>                           
@@ -256,6 +256,28 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 <script type='text/javascript' src='http://localhost:1313/assets/js/theia-sticky-sidebar-1.5.0.js' id='sidebar-js'></script>
 <script type='text/javascript' src='http://localhost:1313/assets/js/lazyload.min-12.4.0.js' id='lazyload-js'></script>
 <script type='text/javascript' src='http://localhost:1313/assets/js/tabs.js' id='tabs-js'></script>
+
+
+<div style="position: fixed; bottom: 20px; right: 20px;">
+    <button onclick="randomJump()" class="btn btn-primary" style="border-radius: 50%; width: 50px; height: 50px;" title="随机访问">
+        <i class="fa fa-random"></i>
+    </button>
+</div>
+
+
+<script>
+function randomJump() {
+    
+    var links = document.querySelectorAll('.url-card .card');
+    if (links.length > 0) {
+        
+        var randomIndex = Math.floor(Math.random() * links.length);
+        var link = links[randomIndex].querySelector('a').href;
+        
+        window.open(link, '_blank');
+    }
+}
+</script>
 
 
 <script type="text/javascript">

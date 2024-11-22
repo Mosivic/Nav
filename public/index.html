@@ -64,7 +64,6 @@
 </head>
 
 
-
 <body class="io-grey-mode">
 
     
@@ -445,12 +444,12 @@
                         
                         <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block">
                             <script>
-                                fetch('https://v1.hitokoto.cn')
+                                fetch('https://v1.hitokoto.cn/?c=a&b&c=c')
                                     .then(response => response.json())
                                     .then(data => {
-                                    const hitokoto = document.getElementById('hitokoto_text')
-                                    hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-                                    hitokoto.innerText = data.hitokoto
+                                        const hitokoto = document.getElementById('hitokoto_text')
+                                        hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+                                        hitokoto.innerText = data.hitokoto + ' —— ' + data.from
                                     })
                                     .catch(console.error)
                             </script>                           
@@ -7093,6 +7092,7 @@
 
         <footer class="main-footer footer-type-1 text-xs">
             <div id="footer-tools" class="d-flex flex-column">
+                
                 <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top">
                     <i class="iconfont icon-to-up"></i>
                 </a>
@@ -7109,6 +7109,11 @@
                     <i class="mode-ico iconfont icon-night"></i>
                 </a>
                 
+                
+                <a href="javascript:" onclick="window.location.href='javascript:randomJump()'" class="btn rounded-circle random-jump m-1" id="random-jump"
+                    data-toggle="tooltip" data-placement="left" title="随机访问">
+                    <i class="fa fa-random"></i>
+                </a>
             </div>
             <div class="footer-inner">
                 <div class="footer-text">本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：furo@furo.fun <br/>© 2024 - 2024 By <a href="https://github.com/shenweiyan/WebStack-Hugo">Furo Bookmark</a> | <a href="https://furo.fun/">Furo Blog</a><br/></div>
@@ -7289,6 +7294,26 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 <script type='text/javascript' src='http://localhost:1313/assets/js/tabs.js' id='tabs-js'></script>
 
 
+
+
+<script>
+function randomJump() {
+    
+    var links = Array.from(document.querySelectorAll('a[href]')).filter(link => 
+        link.href.startsWith('http') && !link.href.includes(window.location.hostname)
+    );
+    
+    if (links && links.length > 0) {
+        var randomIndex = Math.floor(Math.random() * links.length);
+        var randomLink = links[randomIndex];
+        if (randomLink && randomLink.href) {
+            window.open(randomLink.href, '_blank');
+        }
+    }
+}
+</script>
+
+
 <script type="text/javascript">
     $(document).ready(function(){
         var siteWelcome = $('#loading');
@@ -7395,9 +7420,6 @@ function switchNightMode(){
 
 <script>
 $(document).ready(function(){
-    
-    var isAnimJs = $('#appanim-js').length > 0;
-    
     $('.custom-nav').click(function(){
         var source = $(this).data('source');
         if(source === 'knowledge') {

@@ -82,7 +82,7 @@
                         {{ with .Site.Params.yiyan }}
                         <li class="nav-item mr-3 mr-lg-0 d-none d-lg-block">
                             <script>
-                                fetch('https://v1.hitokoto.cn')
+                                fetch('https://v1.hitokoto.cn/?c=a&b&c=c')
                                     .then(response => response.json())
                                     .then(data => {
                                     const hitokoto = document.getElementById('hitokoto_text')

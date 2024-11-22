@@ -1,0 +1,11 @@
+- taxonomy: 博客
+  icon: fas fa-blog fa-lg 
+  list:
+    - term: 技术
+      tabs:
+        - name: 网络技术
+          links:
+            - title: Piglei
+              url: https://www.piglei.com/
+              logo: Piglei.png
+              description: 技术博客

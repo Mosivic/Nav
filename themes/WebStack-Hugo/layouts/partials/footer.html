@@ -12,11 +12,11 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 <script type='text/javascript' src='{{ absURL "assets/js/lazyload.min-12.4.0.js" }}' id='lazyload-js'></script>
 <script type='text/javascript' src='{{ absURL "assets/js/tabs.js" }}' id='tabs-js'></script>
 
-{{ if $.Site.Params.expandSidebar }}
+<!-- {{ if $.Site.Params.expandSidebar }}
 <script type='text/javascript' src='{{ absURL "assets/js/app-anim.js" }}' id='appanim-js'></script>
-{{ else }}
+{{ else }} -->
 <script type='text/javascript' src='{{ absURL "assets/js/app-mini.js" }}' id='appmini-js'></script>
-{{ end }}
+<!-- {{ end }} -->
 <script type="text/javascript">
     $(document).ready(function(){
         var siteWelcome = $('#loading');
@@ -123,7 +123,9 @@ function switchNightMode(){
 
 <script>
 $(document).ready(function(){
-    // 处理自定义导航点击
+    // 判断当前加载的是哪个js文件
+    var isAnimJs = $('#appanim-js').length > 0;
+    
     $('.custom-nav').click(function(){
         var source = $(this).data('source');
         if(source === 'knowledge') {
@@ -131,18 +133,18 @@ $(document).ready(function(){
             $('#content-knowledge').show();
             $('#sidebar-menu-web').hide();
             $('#sidebar-menu-knowledge').show();
-
         }
     });
     
-    // 处理首页导航点击
     $('a[href="./"]').click(function(e){
         e.preventDefault();
         e.stopPropagation();
+        
         $('#content-knowledge').hide();
         $('#content-main').show();
         $('#sidebar-menu-knowledge').hide();
         $('#sidebar-menu-web').show();
+
     });
 });
 </script>

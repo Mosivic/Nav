@@ -128,8 +128,8 @@
     
     <div class="page-container">
 	
-        <div id="sidebar" class="sticky sidebar-nav fade mini-sidebar" style="width: 60px;">
-	
+	    <div id="sidebar" class="sticky sidebar-nav fade animate-nav" style="width: 170px">
+    
             <div class="modal-dialog h-100 sidebar-nav-inner">
                 <div class="sidebar-logo border-bottom border-color">
                     
@@ -253,7 +253,7 @@
                                     
                                     <li class="sidebar-item">
                                         <a href="#fbc026c9fb552701f8db2b0df2aa9114" class="smooth change-href" data-change="#fbc026c9fb552701f8db2b0df2aa9114">    
-                                            <i class="fas fa-live fa-lg icon-fw icon-lg mr-2"></i>
+                                            <i class="fas fa-life-ring fa-lg icon-fw icon-lg mr-2"></i>
                                             <span>生活</span>
                                             <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
                                         </a>
@@ -7289,8 +7289,6 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 <script type='text/javascript' src='http://localhost:1313/assets/js/tabs.js' id='tabs-js'></script>
 
 
-<script type='text/javascript' src='http://localhost:1313/assets/js/app-mini.js' id='appmini-js'></script>
-
 <script type="text/javascript">
     $(document).ready(function(){
         var siteWelcome = $('#loading');
@@ -7398,6 +7396,8 @@ function switchNightMode(){
 <script>
 $(document).ready(function(){
     
+    var isAnimJs = $('#appanim-js').length > 0;
+    
     $('.custom-nav').click(function(){
         var source = $(this).data('source');
         if(source === 'knowledge') {
@@ -7405,18 +7405,18 @@ $(document).ready(function(){
             $('#content-knowledge').show();
             $('#sidebar-menu-web').hide();
             $('#sidebar-menu-knowledge').show();
-
         }
     });
-    
     
     $('a[href="./"]').click(function(e){
         e.preventDefault();
         e.stopPropagation();
+        
         $('#content-knowledge').hide();
         $('#content-main').show();
         $('#sidebar-menu-knowledge').hide();
         $('#sidebar-menu-web').show();
+
     });
 });
 </script>

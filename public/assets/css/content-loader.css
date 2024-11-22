@@ -1,0 +1,29 @@
+.content-tabs {
+    display: flex;
+    margin: 20px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .content-tabs .tab-item {
+    padding: 10px 20px;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+  }
+  
+  .content-tabs .tab-item.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+  }
+  
+  #content-container {
+    transition: opacity 0.2s ease-in-out;
+    min-height: 400px;
+  }
+  
+  .load-error {
+    text-align: center;
+    padding: 50px;
+    color: #666;
+  }

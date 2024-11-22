@@ -1,5 +1,5 @@
 - taxonomy: 生活
-  icon: fas fa-live fa-lg 
+  icon: fas fa-life-ring fa-lg 
   list:
     - term: 健康
       tabs:

@@ -64,6 +64,7 @@
 </head>
 
 
+
 <body class="io-grey-mode">
 
     
@@ -127,8 +128,8 @@
     
     <div class="page-container">
 	
-	    <div id="sidebar" class="sticky sidebar-nav fade animate-nav" style="width: 170px">
-    
+	<div id="sidebar" class="sticky sidebar-nav fade animate-nav" style="width: 170px">
+        
             <div class="modal-dialog h-100 sidebar-nav-inner">
                 <div class="sidebar-logo border-bottom border-color">
                     
@@ -153,6 +154,23 @@
                         <div class="sidebar-menu-inner">
                             
                             <ul id="sidebar-menu-web" class="sidebar-menu-list">
+                                
+                                
+                                    
+                                    <li class="sidebar-item">
+                                        <a href="#a95dd3e179418be1ecd2a719a22db70e" class="smooth change-href" data-change="#a95dd3e179418be1ecd2a719a22db70e">    
+                                            <i class="fas fa-blog fa-lg icon-fw icon-lg mr-2"></i>
+                                            <span>博客</span>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                        </a>
+                                        <ul>
+                                            
+                                            <li><a href="#a95dd3e179418be1ecd2a719a22db70e" class="smooth"><span>技术</span></a></li>
+                                            
+                                        </ul>
+                                    </li> 
+                                    
+                                
                                 
                                 
                                     
@@ -232,25 +250,6 @@
                                 
                                     
                                     <li class="sidebar-item">
-                                        <a href="#4145d4c179e1aafdb5a0295da9a82d42" class="smooth change-href" data-change="#4145d4c179e1aafdb5a0295da9a82d42">    
-                                            <i class="fas fa-language fa-lg icon-fw icon-lg mr-2"></i>
-                                            <span>语言</span>
-                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
-                                        </a>
-                                        <ul>
-                                            
-                                            <li><a href="#4145d4c179e1aafdb5a0295da9a82d42" class="smooth"><span>英语</span></a></li>
-                                            
-                                            <li><a href="#8607ec08342e49e9ba1ed862b6c33dc9" class="smooth"><span>法语</span></a></li>
-                                            
-                                        </ul>
-                                    </li> 
-                                    
-                                
-                                
-                                
-                                    
-                                    <li class="sidebar-item">
                                         <a href="#fbc026c9fb552701f8db2b0df2aa9114" class="smooth change-href" data-change="#fbc026c9fb552701f8db2b0df2aa9114">    
                                             <i class="fas fa-life-ring fa-lg icon-fw icon-lg mr-2"></i>
                                             <span>生活</span>
@@ -276,8 +275,6 @@
                                 
                                 
                                 
-                                
-                                
                                     
                                     <li class="sidebar-item">
                                         <a href="#687a7e7f5901732d5153a40f98e9320d" class="smooth change-href" data-change="#687a7e7f5901732d5153a40f98e9320d">    
@@ -288,6 +285,42 @@
                                         <ul>
                                             
                                             <li><a href="#687a7e7f5901732d5153a40f98e9320d" class="smooth"><span>阅读</span></a></li>
+                                            
+                                        </ul>
+                                    </li> 
+                                    
+                                
+                                
+                                
+                                    
+                                    <li class="sidebar-item">
+                                        <a href="#4145d4c179e1aafdb5a0295da9a82d42" class="smooth change-href" data-change="#4145d4c179e1aafdb5a0295da9a82d42">    
+                                            <i class="fas fa-language fa-lg icon-fw icon-lg mr-2"></i>
+                                            <span>语言</span>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                        </a>
+                                        <ul>
+                                            
+                                            <li><a href="#4145d4c179e1aafdb5a0295da9a82d42" class="smooth"><span>英语</span></a></li>
+                                            
+                                            <li><a href="#8607ec08342e49e9ba1ed862b6c33dc9" class="smooth"><span>法语</span></a></li>
+                                            
+                                        </ul>
+                                    </li> 
+                                    
+                                
+                                
+                                
+                                    
+                                    <li class="sidebar-item">
+                                        <a href="#6e65831863dbf272b7a65cd8df1a440d" class="smooth change-href" data-change="#6e65831863dbf272b7a65cd8df1a440d">    
+                                            <i class="fas fa-calculator fa-lg icon-fw icon-lg mr-2"></i>
+                                            <span>数学</span>
+                                            <i class="iconfont icon-arrow-r-m sidebar-more text-sm"></i>
+                                        </a>
+                                        <ul>
+                                            
+                                            <li><a href="#6e65831863dbf272b7a65cd8df1a440d" class="smooth"><span>数学</span></a></li>
                                             
                                         </ul>
                                     </li> 
@@ -447,9 +480,9 @@
                                 fetch('https://v1.hitokoto.cn/?c=a&b&c=c')
                                     .then(response => response.json())
                                     .then(data => {
-                                        const hitokoto = document.getElementById('hitokoto_text')
-                                        hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-                                        hitokoto.innerText = data.hitokoto + ' —— ' + data.from
+                                    const hitokoto = document.getElementById('hitokoto_text')
+                                    hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+                                    hitokoto.innerText = data.hitokoto + ' —— ' + data.from
                                     })
                                     .catch(console.error)
                             </script>                           
@@ -712,8 +745,100 @@
     
 </div>
 
+
 <div id="content-main" class="content-site customize-site">
      
+  <div class="tab-container">
+    <div class="d-flex flex-fill">
+      <h4 class="text-gray text-lg mb-4">
+        <i
+          class="site-tag iconfont icon-tag icon-lg mr-1"
+          id="a95dd3e179418be1ecd2a719a22db70e"
+        ></i>
+        技术
+      </h4>
+      <div class="flex-fill"></div>
+    </div>
+    
+    <div class="tabs-nav">
+      
+      <a
+        href="javascript:;"
+        class="tab-item active"
+        data-tab="0"
+        >网络技术</a
+      >
+      
+    </div>
+    
+    <div class="tab-contents">
+      
+      <div
+        class="tab-content active"
+        data-tab="0"
+      >
+        <div class="row">
+          
+          <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+            <div class="url-body default">
+              <a
+                href="https://www.piglei.com/"
+                target="_blank"
+                data-id=""
+                data-url="https://www.piglei.com/"
+                class="card no-c mb-4"
+                data-toggle="tooltip"
+                data-placement="bottom"
+                data-original-title="技术博客"
+              >
+                <div class="card-body">
+                  <div class="url-content d-flex align-items-center">
+                    <div
+                      class="url-img mr-2 d-flex align-items-center justify-content-center"
+                    >
+                      
+                        
+                        <img
+                          class="lazy"
+                          src="assets/images/logos/Piglei.png"
+                          data-src="assets/images/logos/Piglei.png"
+                          onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                          alt="Piglei"
+                        />
+                        
+                      
+                    </div>
+                    <div class="url-info flex-fill">
+                      <div class="text-sm overflowClip_1">
+                        <strong>Piglei</strong>
+                      </div>
+                      <p class="overflowClip_1 m-0 text-muted text-xs">
+                        技术博客
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://www.piglei.com/"
+                class="togo text-center text-muted is-views"
+                data-id="689"
+                data-toggle="tooltip"
+                data-placement="right"
+                title="直达"
+                rel="nofollow"
+              >
+                <i class="iconfont icon-goto"></i>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+        
   <div class="tab-container">
     <div class="d-flex flex-fill">
       <h4 class="text-gray text-lg mb-4">
@@ -3320,258 +3445,6 @@
         <h4 class="text-gray text-lg mb-4">
           <i
             class="site-tag iconfont icon-tag icon-lg mr-1"
-            id="4145d4c179e1aafdb5a0295da9a82d42"
-          ></i>
-          英语
-        </h4>
-        <div class="flex-fill"></div>
-      </div>
-      
-      <div class="tabs-nav">
-        
-        <a
-          href="javascript:;"
-          class="tab-item active"
-          data-tab="0"
-          >学习指南</a
-        >
-        
-        <a
-          href="javascript:;"
-          class="tab-item "
-          data-tab="1"
-          >语法</a
-        >
-        
-      </div>
-      
-      <div class="tab-contents">
-        
-        <div
-          class="tab-content active"
-          data-tab="0"
-        >
-          <div class="row">
-            
-            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-              <div class="url-body default">
-                <a
-                  href="https://vvyst0z7tes.feishu.cn/wiki/HQuawZepyiwNiNkImw6c00IXnmc"
-                  target="_blank"
-                  data-id=""
-                  data-url="https://vvyst0z7tes.feishu.cn/wiki/HQuawZepyiwNiNkImw6c00IXnmc"
-                  class="card no-c mb-4"
-                  data-toggle="tooltip"
-                  data-placement="bottom"
-                  data-original-title="基于南加州大学的荣休教授斯蒂芬.克拉申（Stephen D。Krashen）博士的假说理论，为不同水平的英语自学者提供了结构化的学习路径。"
-                >
-                  <div class="card-body">
-                    <div class="url-content d-flex align-items-center">
-                      <div
-                        class="url-img mr-2 d-flex align-items-center justify-content-center"
-                      >
-                        
-                          
-                          <img
-                            class="lazy"
-                            src="assets/images/logos/%e9%a3%9e%e4%b9%a6.png"
-                            data-src="assets/images/logos/%e9%a3%9e%e4%b9%a6.png"
-                            onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
-                            alt="英语提升指南"
-                          />
-                          
-                        
-                      </div>
-                      <div class="url-info flex-fill">
-                        <div class="text-sm overflowClip_1">
-                          <strong>英语提升指南</strong>
-                        </div>
-                        <p class="overflowClip_1 m-0 text-muted text-xs">
-                          基于南加州大学的荣休教授斯蒂芬.克拉申（Stephen D。Krashen）博士的假说理论，为不同水平的英语自学者提供了结构化的学习路径。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://vvyst0z7tes.feishu.cn/wiki/HQuawZepyiwNiNkImw6c00IXnmc"
-                  class="togo text-center text-muted is-views"
-                  data-id="689"
-                  data-toggle="tooltip"
-                  data-placement="right"
-                  title="直达"
-                  rel="nofollow"
-                >
-                  <i class="iconfont icon-goto"></i>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
-        <div
-          class="tab-content "
-          data-tab="1"
-        >
-          <div class="row">
-            
-            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-              <div class="url-body default">
-                <a
-                  href="https://github.com/yzy1996/English-Writing"
-                  target="_blank"
-                  data-id=""
-                  data-url="https://github.com/yzy1996/English-Writing"
-                  class="card no-c mb-4"
-                  data-toggle="tooltip"
-                  data-placement="bottom"
-                  data-original-title="收录作者在阅读论文的过程中收集整理的一些好的英语用法。"
-                >
-                  <div class="card-body">
-                    <div class="url-content d-flex align-items-center">
-                      <div
-                        class="url-img mr-2 d-flex align-items-center justify-content-center"
-                      >
-                        
-                          
-                          <img
-                            class="lazy"
-                            src="assets/images/logos/github.png"
-                            data-src="assets/images/logos/github.png"
-                            onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
-                            alt="English Writing"
-                          />
-                          
-                        
-                      </div>
-                      <div class="url-info flex-fill">
-                        <div class="text-sm overflowClip_1">
-                          <strong>English Writing</strong>
-                        </div>
-                        <p class="overflowClip_1 m-0 text-muted text-xs">
-                          收录作者在阅读论文的过程中收集整理的一些好的英语用法。
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://github.com/yzy1996/English-Writing"
-                  class="togo text-center text-muted is-views"
-                  data-id="689"
-                  data-toggle="tooltip"
-                  data-placement="right"
-                  title="直达"
-                  rel="nofollow"
-                >
-                  <i class="iconfont icon-goto"></i>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
-      </div>
-    </div>
-    
-    <div class="tab-container">
-      <div class="d-flex flex-fill">
-        <h4 class="text-gray text-lg mb-4">
-          <i
-            class="site-tag iconfont icon-tag icon-lg mr-1"
-            id="8607ec08342e49e9ba1ed862b6c33dc9"
-          ></i>
-          法语
-        </h4>
-        <div class="flex-fill"></div>
-      </div>
-      
-      <div class="tabs-nav">
-        
-        <a
-          href="javascript:;"
-          class="tab-item active"
-          data-tab="0"
-          >语法</a
-        >
-        
-      </div>
-      
-      <div class="tab-contents">
-        
-        <div
-          class="tab-content active"
-          data-tab="0"
-        >
-          <div class="row">
-            
-            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
-              <div class="url-body default">
-                <a
-                  href="https://github.com/llwslc/grammar-club"
-                  target="_blank"
-                  data-id=""
-                  data-url="https://github.com/llwslc/grammar-club"
-                  class="card no-c mb-4"
-                  data-toggle="tooltip"
-                  data-placement="bottom"
-                  data-original-title="旋元佑老师的语法俱乐部书籍电子版"
-                >
-                  <div class="card-body">
-                    <div class="url-content d-flex align-items-center">
-                      <div
-                        class="url-img mr-2 d-flex align-items-center justify-content-center"
-                      >
-                        
-                          
-                          <img
-                            class="lazy"
-                            src="assets/images/logos/Github.com"
-                            data-src="assets/images/logos/Github.com"
-                            onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
-                            alt="语法俱乐部"
-                          />
-                          
-                        
-                      </div>
-                      <div class="url-info flex-fill">
-                        <div class="text-sm overflowClip_1">
-                          <strong>语法俱乐部</strong>
-                        </div>
-                        <p class="overflowClip_1 m-0 text-muted text-xs">
-                          旋元佑老师的语法俱乐部书籍电子版
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://github.com/llwslc/grammar-club"
-                  class="togo text-center text-muted is-views"
-                  data-id="689"
-                  data-toggle="tooltip"
-                  data-placement="right"
-                  title="直达"
-                  rel="nofollow"
-                >
-                  <i class="iconfont icon-goto"></i>
-                </a>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        
-      </div>
-    </div>
-          
-    <div class="tab-container">
-      <div class="d-flex flex-fill">
-        <h4 class="text-gray text-lg mb-4">
-          <i
-            class="site-tag iconfont icon-tag icon-lg mr-1"
             id="fbc026c9fb552701f8db2b0df2aa9114"
           ></i>
           健康
@@ -4398,7 +4271,7 @@
         
       </div>
     </div>
-            
+          
     <div class="tab-container">
       <div class="d-flex flex-fill">
         <h4 class="text-gray text-lg mb-4">
@@ -4720,6 +4593,349 @@
                 </a>
                 <a
                   href="https://github.com/yifeikong/reverse-interview-zh"
+                  class="togo text-center text-muted is-views"
+                  data-id="689"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="直达"
+                  rel="nofollow"
+                >
+                  <i class="iconfont icon-goto"></i>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+          
+    <div class="tab-container">
+      <div class="d-flex flex-fill">
+        <h4 class="text-gray text-lg mb-4">
+          <i
+            class="site-tag iconfont icon-tag icon-lg mr-1"
+            id="4145d4c179e1aafdb5a0295da9a82d42"
+          ></i>
+          英语
+        </h4>
+        <div class="flex-fill"></div>
+      </div>
+      
+      <div class="tabs-nav">
+        
+        <a
+          href="javascript:;"
+          class="tab-item active"
+          data-tab="0"
+          >学习指南</a
+        >
+        
+        <a
+          href="javascript:;"
+          class="tab-item "
+          data-tab="1"
+          >语法</a
+        >
+        
+      </div>
+      
+      <div class="tab-contents">
+        
+        <div
+          class="tab-content active"
+          data-tab="0"
+        >
+          <div class="row">
+            
+            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+              <div class="url-body default">
+                <a
+                  href="https://vvyst0z7tes.feishu.cn/wiki/HQuawZepyiwNiNkImw6c00IXnmc"
+                  target="_blank"
+                  data-id=""
+                  data-url="https://vvyst0z7tes.feishu.cn/wiki/HQuawZepyiwNiNkImw6c00IXnmc"
+                  class="card no-c mb-4"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-original-title="基于南加州大学的荣休教授斯蒂芬.克拉申（Stephen D。Krashen）博士的假说理论，为不同水平的英语自学者提供了结构化的学习路径。"
+                >
+                  <div class="card-body">
+                    <div class="url-content d-flex align-items-center">
+                      <div
+                        class="url-img mr-2 d-flex align-items-center justify-content-center"
+                      >
+                        
+                          
+                          <img
+                            class="lazy"
+                            src="assets/images/logos/%e9%a3%9e%e4%b9%a6.png"
+                            data-src="assets/images/logos/%e9%a3%9e%e4%b9%a6.png"
+                            onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                            alt="英语提升指南"
+                          />
+                          
+                        
+                      </div>
+                      <div class="url-info flex-fill">
+                        <div class="text-sm overflowClip_1">
+                          <strong>英语提升指南</strong>
+                        </div>
+                        <p class="overflowClip_1 m-0 text-muted text-xs">
+                          基于南加州大学的荣休教授斯蒂芬.克拉申（Stephen D。Krashen）博士的假说理论，为不同水平的英语自学者提供了结构化的学习路径。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="https://vvyst0z7tes.feishu.cn/wiki/HQuawZepyiwNiNkImw6c00IXnmc"
+                  class="togo text-center text-muted is-views"
+                  data-id="689"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="直达"
+                  rel="nofollow"
+                >
+                  <i class="iconfont icon-goto"></i>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div
+          class="tab-content "
+          data-tab="1"
+        >
+          <div class="row">
+            
+            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+              <div class="url-body default">
+                <a
+                  href="https://github.com/yzy1996/English-Writing"
+                  target="_blank"
+                  data-id=""
+                  data-url="https://github.com/yzy1996/English-Writing"
+                  class="card no-c mb-4"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-original-title="收录作者在阅读论文的过程中收集整理的一些好的英语用法。"
+                >
+                  <div class="card-body">
+                    <div class="url-content d-flex align-items-center">
+                      <div
+                        class="url-img mr-2 d-flex align-items-center justify-content-center"
+                      >
+                        
+                          
+                          <img
+                            class="lazy"
+                            src="assets/images/logos/github.png"
+                            data-src="assets/images/logos/github.png"
+                            onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                            alt="English Writing"
+                          />
+                          
+                        
+                      </div>
+                      <div class="url-info flex-fill">
+                        <div class="text-sm overflowClip_1">
+                          <strong>English Writing</strong>
+                        </div>
+                        <p class="overflowClip_1 m-0 text-muted text-xs">
+                          收录作者在阅读论文的过程中收集整理的一些好的英语用法。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/yzy1996/English-Writing"
+                  class="togo text-center text-muted is-views"
+                  data-id="689"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="直达"
+                  rel="nofollow"
+                >
+                  <i class="iconfont icon-goto"></i>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="tab-container">
+      <div class="d-flex flex-fill">
+        <h4 class="text-gray text-lg mb-4">
+          <i
+            class="site-tag iconfont icon-tag icon-lg mr-1"
+            id="8607ec08342e49e9ba1ed862b6c33dc9"
+          ></i>
+          法语
+        </h4>
+        <div class="flex-fill"></div>
+      </div>
+      
+      <div class="tabs-nav">
+        
+        <a
+          href="javascript:;"
+          class="tab-item active"
+          data-tab="0"
+          >语法</a
+        >
+        
+      </div>
+      
+      <div class="tab-contents">
+        
+        <div
+          class="tab-content active"
+          data-tab="0"
+        >
+          <div class="row">
+            
+            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+              <div class="url-body default">
+                <a
+                  href="https://github.com/llwslc/grammar-club"
+                  target="_blank"
+                  data-id=""
+                  data-url="https://github.com/llwslc/grammar-club"
+                  class="card no-c mb-4"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-original-title="旋元佑老师的语法俱乐部书籍电子版"
+                >
+                  <div class="card-body">
+                    <div class="url-content d-flex align-items-center">
+                      <div
+                        class="url-img mr-2 d-flex align-items-center justify-content-center"
+                      >
+                        
+                          
+                          <img
+                            class="lazy"
+                            src="assets/images/logos/Github.com"
+                            data-src="assets/images/logos/Github.com"
+                            onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                            alt="语法俱乐部"
+                          />
+                          
+                        
+                      </div>
+                      <div class="url-info flex-fill">
+                        <div class="text-sm overflowClip_1">
+                          <strong>语法俱乐部</strong>
+                        </div>
+                        <p class="overflowClip_1 m-0 text-muted text-xs">
+                          旋元佑老师的语法俱乐部书籍电子版
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/llwslc/grammar-club"
+                  class="togo text-center text-muted is-views"
+                  data-id="689"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="直达"
+                  rel="nofollow"
+                >
+                  <i class="iconfont icon-goto"></i>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+    </div>
+          
+    <div class="tab-container">
+      <div class="d-flex flex-fill">
+        <h4 class="text-gray text-lg mb-4">
+          <i
+            class="site-tag iconfont icon-tag icon-lg mr-1"
+            id="6e65831863dbf272b7a65cd8df1a440d"
+          ></i>
+          数学
+        </h4>
+        <div class="flex-fill"></div>
+      </div>
+      
+      <div class="tabs-nav">
+        
+        <a
+          href="javascript:;"
+          class="tab-item active"
+          data-tab="0"
+          >基础数学</a
+        >
+        
+      </div>
+      
+      <div class="tab-contents">
+        
+        <div
+          class="tab-content active"
+          data-tab="0"
+        >
+          <div class="row">
+            
+            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+              <div class="url-body default">
+                <a
+                  href="https://github.com/WTFAcademy/WTF-zk/tree/main"
+                  target="_blank"
+                  data-id=""
+                  data-url="https://github.com/WTFAcademy/WTF-zk/tree/main"
+                  class="card no-c mb-4"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-original-title="零知识证明入门教程。这是一份入门级的零知识证明教程，零知识证明是一种技术，允许一方在不泄露任何具体信息的情况下向另一方证明某件事为真，多用于密码学、隐私计算和 Web3 等领域。"
+                >
+                  <div class="card-body">
+                    <div class="url-content d-flex align-items-center">
+                      <div
+                        class="url-img mr-2 d-flex align-items-center justify-content-center"
+                      >
+                        
+                          
+                          <img
+                            class="lazy"
+                            src="assets/images/logos/github.png"
+                            data-src="assets/images/logos/github.png"
+                            onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                            alt="零知识证明入门教程"
+                          />
+                          
+                        
+                      </div>
+                      <div class="url-info flex-fill">
+                        <div class="text-sm overflowClip_1">
+                          <strong>零知识证明入门教程</strong>
+                        </div>
+                        <p class="overflowClip_1 m-0 text-muted text-xs">
+                          零知识证明入门教程。这是一份入门级的零知识证明教程，零知识证明是一种技术，允许一方在不泄露任何具体信息的情况下向另一方证明某件事为真，多用于密码学、隐私计算和 Web3 等领域。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/WTFAcademy/WTF-zk/tree/main"
                   class="togo text-center text-muted is-views"
                   data-id="689"
                   data-toggle="tooltip"
@@ -6373,6 +6589,60 @@
             <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
               <div class="url-body default">
                 <a
+                  href="https://github.com/bobbyiliev/introduction-to-bash-scripting"
+                  target="_blank"
+                  data-id=""
+                  data-url="https://github.com/bobbyiliev/introduction-to-bash-scripting"
+                  class="card no-c mb-4"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-original-title="Bash 脚本入门指南"
+                >
+                  <div class="card-body">
+                    <div class="url-content d-flex align-items-center">
+                      <div
+                        class="url-img mr-2 d-flex align-items-center justify-content-center"
+                      >
+                        
+                          
+                          <img
+                            class="lazy"
+                            src="assets/images/logos/github.png"
+                            data-src="assets/images/logos/github.png"
+                            onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                            alt="Bash 脚本入门指南"
+                          />
+                          
+                        
+                      </div>
+                      <div class="url-info flex-fill">
+                        <div class="text-sm overflowClip_1">
+                          <strong>Bash 脚本入门指南</strong>
+                        </div>
+                        <p class="overflowClip_1 m-0 text-muted text-xs">
+                          Bash 脚本入门指南
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/bobbyiliev/introduction-to-bash-scripting"
+                  class="togo text-center text-muted is-views"
+                  data-id="689"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="直达"
+                  rel="nofollow"
+                >
+                  <i class="iconfont icon-goto"></i>
+                </a>
+              </div>
+            </div>
+            
+            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+              <div class="url-body default">
+                <a
                   href="https://github.com/jlevy/the-art-of-command-line"
                   target="_blank"
                   data-id=""
@@ -6636,6 +6906,13 @@
           >编程模式</a
         >
         
+        <a
+          href="javascript:;"
+          class="tab-item "
+          data-tab="3"
+          >图形学</a
+        >
+        
       </div>
       
       <div class="tab-contents">
@@ -6814,6 +7091,69 @@
                 </a>
                 <a
                   href="https://github.com/yyc-git/3DProgramPattern"
+                  class="togo text-center text-muted is-views"
+                  data-id="689"
+                  data-toggle="tooltip"
+                  data-placement="right"
+                  title="直达"
+                  rel="nofollow"
+                >
+                  <i class="iconfont icon-goto"></i>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div
+          class="tab-content "
+          data-tab="3"
+        >
+          <div class="row">
+            
+            <div class="url-card col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+              <div class="url-body default">
+                <a
+                  href="https://github.com/RayTracing/raytracing.github.io"
+                  target="_blank"
+                  data-id=""
+                  data-url="https://github.com/RayTracing/raytracing.github.io"
+                  class="card no-c mb-4"
+                  data-toggle="tooltip"
+                  data-placement="bottom"
+                  data-original-title="《Ray Tracing in One Weekend》系列书籍。这是一套光线追踪技术的入门书籍，教你用 C&#43;&#43; 实现一个光线追踪器。光线追踪（Ray Tracing）是一种计算机图形学中的渲染技术，能够通过模拟光线在虚拟场景中的传播，生成出栩栩如生的真实感图像。"
+                >
+                  <div class="card-body">
+                    <div class="url-content d-flex align-items-center">
+                      <div
+                        class="url-img mr-2 d-flex align-items-center justify-content-center"
+                      >
+                        
+                          
+                          <img
+                            class="lazy"
+                            src="assets/images/logos/github.png"
+                            data-src="assets/images/logos/github.png"
+                            onerror="javascript:this.src='assets\/images\/logos\/default.webp'"
+                            alt="Ray Tracing in One Weekend"
+                          />
+                          
+                        
+                      </div>
+                      <div class="url-info flex-fill">
+                        <div class="text-sm overflowClip_1">
+                          <strong>Ray Tracing in One Weekend</strong>
+                        </div>
+                        <p class="overflowClip_1 m-0 text-muted text-xs">
+                          《Ray Tracing in One Weekend》系列书籍。这是一套光线追踪技术的入门书籍，教你用 C&#43;&#43; 实现一个光线追踪器。光线追踪（Ray Tracing）是一种计算机图形学中的渲染技术，能够通过模拟光线在虚拟场景中的传播，生成出栩栩如生的真实感图像。
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/RayTracing/raytracing.github.io"
                   class="togo text-center text-muted is-views"
                   data-id="689"
                   data-toggle="tooltip"
@@ -7091,7 +7431,6 @@
 
         <footer class="main-footer footer-type-1 text-xs">
             <div id="footer-tools" class="d-flex flex-column">
-                
                 <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top">
                     <i class="iconfont icon-to-up"></i>
                 </a>
@@ -7277,6 +7616,7 @@
     </div>
 </div>
 
+
 <script type='text/javascript' src='http://localhost:1313/assets/js/jquery.ui.touch-punch.min-0.2.2.js' id='jqueryui-touch-js'></script>
 <script type='text/javascript' src='http://localhost:1313/assets/js/clipboard.min-5.6.2.js' id='clipboard-js'></script>
 <script type='text/javascript' src='http://localhost:1313/assets/js/tooltip-extend.js' id='iplaycode-nav-js'></script>
@@ -7292,25 +7632,7 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 <script type='text/javascript' src='http://localhost:1313/assets/js/tabs.js' id='tabs-js'></script>
 
 
-
-
-<script>
-function randomJump() {
-    
-    var links = Array.from(document.querySelectorAll('a[href]')).filter(link => 
-        link.href.startsWith('http') && !link.href.includes(window.location.hostname)
-    );
-    
-    if (links && links.length > 0) {
-        var randomIndex = Math.floor(Math.random() * links.length);
-        var randomLink = links[randomIndex];
-        if (randomLink && randomLink.href) {
-            window.open(randomLink.href, '_blank');
-        }
-    }
-}
-</script>
-
+<script type='text/javascript' src='http://localhost:1313/assets/js/app-anim.js' id='appanim-js'></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -7367,6 +7689,24 @@ function randomJump() {
     });
 </script>
 
+
+<script>
+    function randomJump() {
+        
+        var links = Array.from(document.querySelectorAll('a[href]')).filter(link => 
+            link.href.startsWith('http') && !link.href.includes(window.location.hostname)
+        );
+        
+        if (links && links.length > 0) {
+            var randomIndex = Math.floor(Math.random() * links.length);
+            var randomLink = links[randomIndex];
+            if (randomLink && randomLink.href) {
+                window.open(randomLink.href, '_blank');
+            }
+        }
+    }
+</script>
+
 <script>
 
 (function(){
@@ -7418,6 +7758,7 @@ function switchNightMode(){
 
 <script>
 $(document).ready(function(){
+    
     $('.custom-nav').click(function(){
         var source = $(this).data('source');
         if(source === 'knowledge') {
@@ -7425,18 +7766,18 @@ $(document).ready(function(){
             $('#content-knowledge').show();
             $('#sidebar-menu-web').hide();
             $('#sidebar-menu-knowledge').show();
+
         }
     });
+    
     
     $('a[href="./"]').click(function(e){
         e.preventDefault();
         e.stopPropagation();
-        
         $('#content-knowledge').hide();
         $('#content-main').show();
         $('#sidebar-menu-knowledge').hide();
         $('#sidebar-menu-web').show();
-
     });
 });
 </script>

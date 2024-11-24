@@ -62,6 +62,7 @@
 
 </head>
 
+
 <div class="main-content flex-fill grid-bg">
     <div class="big-header-banner">
         <div id="header" class="page-header sticky">
@@ -151,9 +152,9 @@
                                 fetch('https://v1.hitokoto.cn/?c=a&b&c=c')
                                     .then(response => response.json())
                                     .then(data => {
-                                        const hitokoto = document.getElementById('hitokoto_text')
-                                        hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-                                        hitokoto.innerText = data.hitokoto + ' —— ' + data.from
+                                    const hitokoto = document.getElementById('hitokoto_text')
+                                    hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+                                    hitokoto.innerText = data.hitokoto + ' —— ' + data.from
                                     })
                                     .catch(console.error)
                             </script>                           
@@ -217,7 +218,6 @@
 
         <footer class="main-footer footer-type-1 text-xs">
             <div id="footer-tools" class="d-flex flex-column">
-                
                 <a href="javascript:" id="go-to-up" class="btn rounded-circle go-up m-1" rel="go-top">
                     <i class="iconfont icon-to-up"></i>
                 </a>
@@ -263,25 +263,7 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 <script type='text/javascript' src='http://localhost:1313/assets/js/tabs.js' id='tabs-js'></script>
 
 
-
-
-<script>
-function randomJump() {
-    
-    var links = Array.from(document.querySelectorAll('a[href]')).filter(link => 
-        link.href.startsWith('http') && !link.href.includes(window.location.hostname)
-    );
-    
-    if (links && links.length > 0) {
-        var randomIndex = Math.floor(Math.random() * links.length);
-        var randomLink = links[randomIndex];
-        if (randomLink && randomLink.href) {
-            window.open(randomLink.href, '_blank');
-        }
-    }
-}
-</script>
-
+<script type='text/javascript' src='http://localhost:1313/assets/js/app-anim.js' id='appanim-js'></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -338,6 +320,24 @@ function randomJump() {
     });
 </script>
 
+
+<script>
+    function randomJump() {
+        
+        var links = Array.from(document.querySelectorAll('a[href]')).filter(link => 
+            link.href.startsWith('http') && !link.href.includes(window.location.hostname)
+        );
+        
+        if (links && links.length > 0) {
+            var randomIndex = Math.floor(Math.random() * links.length);
+            var randomLink = links[randomIndex];
+            if (randomLink && randomLink.href) {
+                window.open(randomLink.href, '_blank');
+            }
+        }
+    }
+</script>
+
 <script>
 
 (function(){
@@ -389,6 +389,7 @@ function switchNightMode(){
 
 <script>
 $(document).ready(function(){
+    
     $('.custom-nav').click(function(){
         var source = $(this).data('source');
         if(source === 'knowledge') {
@@ -396,18 +397,18 @@ $(document).ready(function(){
             $('#content-knowledge').show();
             $('#sidebar-menu-web').hide();
             $('#sidebar-menu-knowledge').show();
+
         }
     });
+    
     
     $('a[href="./"]').click(function(e){
         e.preventDefault();
         e.stopPropagation();
-        
         $('#content-knowledge').hide();
         $('#content-main').show();
         $('#sidebar-menu-knowledge').hide();
         $('#sidebar-menu-web').show();
-
     });
 });
 </script>

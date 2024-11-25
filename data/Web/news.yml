@@ -57,10 +57,6 @@
               description: 游戏新闻资讯
         - name: 技术
           links:
-            - title: 开发者头条
-              url: https://toutiao.io/
-              logo: 开发者头条.png
-              description: 国内技术新闻资讯
             - title: 开发者技术前线
               url: https://www.techweb.com.cn/
               logo: 开发者技术前线.png

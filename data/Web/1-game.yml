@@ -1,0 +1,164 @@
+- taxonomy: 游戏
+  icon: fas fa-gamepad fa-lg 
+  list:
+    - term: 在线游戏
+      tabs:
+        - name: 独立游戏
+          links:
+            - title: itch.io
+              url: https://itch.io/
+              logo: itch.ico
+              description: 独立游戏平台
+            - title: INDIENOVA
+              url: https://indienova.com/
+              logo: indienova.ico
+              description: 国内独立游戏平台
+            - title: FREEM
+              url: https://www.freem.ne.jp/
+              logo: freem.ico
+              description: 日本独立游戏平台
+            - title: freegame-mugen
+              url: https://freegame-mugen.jp/
+              logo: freegame-mugen.ico
+              description: 日本独立游戏平台
+            - title: plicy
+              url: https://plicy.net/
+              logo: plicy.ico
+              description: 独立游戏平台
+        - name: 怀旧游戏
+          links:
+            - title: 红白机游戏盒
+              url: https://nes.heheda.top/
+              logo: 红白机游戏盒.png
+              description: 红白机游戏模拟器
+            - title: EMU666
+              url: https://www.emu666.com/
+              logo: EMU666.png
+              description: 在线玩模拟器游戏
+            - title: yikm游戏
+              url: http://ending.fun/
+              logo: yikm游戏.png
+              description: 一个可以在线玩红白机的网站
+        - name: flash 游戏
+          links:
+            - title: oldswf
+              url: https://oldswf.com/
+              logo: oldswf.png
+              description: 无需安装flash即可在线游玩的小游戏站
+            - title: 4399小游戏
+              url: https://www.4399.com/
+              logo: 4399小游戏.png
+              description: 在线玩flash游戏
+    - term: 游戏信息
+      tabs:
+        - name: 媒体资讯
+          links:
+            - title: 游民星空
+              url: https://www.gamersky.com/
+              logo: 游民星空.png
+              description: 游戏新闻资讯
+            - title: 游研社
+              url: https://www.yystv.cn/
+              logo: 游研社.png
+              description: 游戏新闻资讯
+            - title: 游戏时光
+              url: https://www.vgtime.com/
+              logo: 游戏时光.png
+              description: 游戏新闻资讯
+            - title: 触乐
+              url: https://www.chuapp.com/
+              logo: 触乐.png
+              description: 游戏新闻资讯
+            - title: 机核
+              url: https://www.gcores.com/
+              logo: 机核.png
+              description: 游戏新闻资讯
+            - title: 游资网
+              url: https://www.youzine.com/
+              logo: 游资网.png
+              description: 游戏新闻资讯
+            - title: 游戏葡萄
+              url: https://www.youxiputao.com/
+              logo: 游戏葡萄.png
+              description: 游戏新闻资讯
+        - name: 信息库
+          links:
+            - title: indiedb
+              url: https://www.indiedb.com/
+              logo: indiedb.ico
+              description: 独立游戏信息库
+            - title: SteamDB
+              url: https://steamdb.info/
+              logo: steamdb.png
+              description: Steam游戏信息库
+    - term: 游戏开发
+      tabs:
+        - name: 素材资源
+          links:
+            - title: Itch
+              url: https://itch.io/
+              logo: Itch.png
+              description: 全球最大独立游戏平台。
+            - title: Kenney
+              url: https://kenney.nl/
+              logo: Kenney.png
+              description: 提供高质量的游戏资源，从图形到声音都有，涵盖了多个游戏类型。
+            - title: Bevouliin
+              url: https://bevouliin.com
+              logo: Bevouliin.png
+              description: 提供2D角色和图形素材，适用于平台游戏等。
+            - title: Construct
+              url: https://construct.net
+              logo: Construct.png
+              description: 一个用于制作2D游戏的引擎，它也有社区和资源库，开发者可以分享和获取游戏素材。
+            - title: Super Game Asset
+              url: https://supergameasset.com
+              logo: Super Game Asset.png
+              description: 提供各种2D和3D游戏资源，涵盖了多个游戏风格
+            - title: Game Developer Studio
+              url: https://gamedeveloperstudio.com
+              logo: Game Developer Studio.png
+              description: 提供各种资源，包括图形素材、声音和工具。
+            - title: Game Art Partners
+              url: https://gameartpartners.com
+              logo: Game Art Partners.png
+              description: 提供各种2D和3D游戏素材，包括角色、环境、动画等。
+            - title: Reiner's Tilesets
+              url: https://reinerstilesets.de
+              logo: Reiner's Tilesets.png
+              description: 提供2D游戏平铺素材，用于创建游戏地图。
+            - title: Toke Game Art
+              url: https://tokegameart.net
+              logo: Toke Game Art.png
+              description: 提供各种2D游戏素材，包括角色、界面元素、图标等。
+            - title: Craftpix
+              url: https://craftpix.net
+              logo: Craftpix.png
+              description: 提供各种精美的2D图形素材，包括角色、背景、界面元素等，可用于制作2D游戏。
+            - title: Game Icons
+              url: https://game-icons.net
+              logo: Game Icons.png
+              description: 收集了大量游戏图标的网站，可用于游戏界面和图标设计。
+            - title: Gamedev Market
+              url: https://gamedevmarket.net
+              logo: Gamedev Market.png
+              description: 商业资源市场，提供各种游戏素材、工具和代码。
+            - title: Open Game Art
+              url: https://opengameart.org
+              logo: Open Game Art.png
+              description: 社区驱动的网站，提供大量免费的游戏素材，包括音效、音乐和图形。
+            - title: Quaternius
+              url: https://quaternius.com
+              logo: Quaternius.png
+              description: 提供各种3D游戏角色和动画资源。
+            - title: Game Art 2D
+              url: https://gameart2d.com
+              logo: Game Art 2D.png
+              description: 提供2D游戏素材，涵盖了角色、地图元素、动画等。
+
+
+
+
+
+
+

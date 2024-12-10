@@ -28,36 +28,6 @@
               url: https://zeli.app/zh
               logo: zeli.png
               description: 中文读科技新闻，旨在帮你快速挑选感兴趣的文章来读
-        - name: 游戏
-          links:
-            - title: 游民星空
-              url: https://www.gamersky.com/
-              logo: 游民星空.png
-              description: 游戏新闻资讯
-            - title: 游研社
-              url: https://www.yystv.cn/
-              logo: 游研社.png
-              description: 游戏新闻资讯
-            - title: 游戏时光
-              url: https://www.vgtime.com/
-              logo: 游戏时光.png
-              description: 游戏新闻资讯
-            - title: 触乐
-              url: https://www.chuapp.com/
-              logo: 触乐.png
-              description: 游戏新闻资讯
-            - title: 机核
-              url: https://www.gcores.com/
-              logo: 机核.png
-              description: 游戏新闻资讯
-            - title: 游资网
-              url: https://www.youzine.com/
-              logo: 游资网.png
-              description: 游戏新闻资讯
-            - title: 游戏葡萄
-              url: https://www.youxiputao.com/
-              logo: 游戏葡萄.png
-              description: 游戏新闻资讯
         - name: 技术
           links:
             - title: 开发者技术前线
